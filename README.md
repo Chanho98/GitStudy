@@ -1,11 +1,21 @@
 # Git Study
 
-* __참고 링크__
+## 0. Git 명령어 
+* `git pull origin main --allow-unrelated-histories` 서로 다른 Histories 가진 Merge `refusing to merge unrelated histories` Error Code 해결
+    * [Merge Commit 입력방법](https://velog.io/@ssmin0606/%EA%B0%9C%EB%B0%9C%ED%88%B4-Please-enter-a-commit-message-to-explain-why-this-merge-is-necessary-especially-if-it-merges-an-updated-upstream-into-a-topic-branch-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0-git-bash)
+* 
 
-            누구나 쉽게 이해할 수 있는 Git에 입문 : [https://backlog.com/git-tutorial/kr/](https://backlog.com/git-tutorial/kr/)  
-            readme MD 문법 : [https://abled.tistory.com/39](https://abled.tistory.com/39)
+
+ __참고 링크__
+* Branch Graphic Viewer [source tree GUI](https://www.sourcetreeapp.com/)
+* 누구나 쉽게 이해할 수 있는 Git에 입문 : [https://backlog.com/git-tutorial/kr/](https://backlog.com/git-tutorial/kr/)  
+* readme MD 문법 : [https://abled.tistory.com/39](https://abled.tistory.com/39)
 
 ## 1. Git 시작하기
+
+### Git Flow
+![image](https://user-images.githubusercontent.com/78125194/212982529-f58f691c-bb13-41af-9a6f-c9e69838737f.png)
+
 __1.1.1. config 계정 정보 입력하기__
 ```
 git config --global user.name "Max Kim"
@@ -79,5 +89,7 @@ git commit -m "커밋명"
 git push origin master
 ```
   > 레포지토리에 푸쉬하기
-  
+
+## 2. Git Version 관리
+
 ****
