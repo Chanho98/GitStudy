@@ -1,9 +1,14 @@
 # Git Study
 
-## 0. Git 명령어 
+## 0. Git 명령어 / 개념
 * `git pull origin main --allow-unrelated-histories` 서로 다른 Histories 가진 Merge `refusing to merge unrelated histories` Error Code 해결
     * [Merge Commit 입력방법](https://velog.io/@ssmin0606/%EA%B0%9C%EB%B0%9C%ED%88%B4-Please-enter-a-commit-message-to-explain-why-this-merge-is-necessary-especially-if-it-merges-an-updated-upstream-into-a-topic-branch-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0-git-bash)
-* 
+* FastForward 방식 Merge 현재 브랜치의 HEAD가 대상 브랜치의 HEAD까지로 옮기는 Merge
+  * Ex) 커밋을 분기로 2개의 Branch가 있다면
+  * 우선 Main이 No.1 Branch로 FastForward되며 같은 Pointer를 갖는다.
+  * 이루 No.1 Branch를 삭제하고 No.2 Branch와 Merge한다.
+* Merge 하기 이전에 No2. Branch에 commit하여 이상 유무를 확인하고 main Branch에 commit한다.
+* Pull Request를 통해서 Merge Process를 진행할 수 있다.
 
 
  __참고 링크__
@@ -89,6 +94,17 @@ git commit -m "커밋명"
 git push origin master
 ```
   > 레포지토리에 푸쉬하기
+
+__1.4.1 Checkout 이용하기__
+```
+git log    -> commit 된 내역을 검색한다. 
+git checkout <Serial Number>    -> Serial 넘버를 통해  원하는 commit으로 이동 가능
+git checkout -     -> 가장 최신 커밋으로 돌아갈 수 있다.
+```
+
+
+
+
 
 ## 2. Git Version 관리
 
